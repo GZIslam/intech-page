@@ -1,0 +1,333 @@
+*, html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body, html{
+    background-color: #041012;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.preloader{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.main-menu{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: 50px;
+    opacity: 0;
+}
+.main_preloader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.first_word{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 58px;
+    line-height: 68px;
+    color: #FFFA79;
+    margin: 0;
+    padding: 0;
+    margin-bottom: -20px;
+}
+.second_word{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 80px;
+    line-height: 92px;
+    color: #FF406E;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0;
+    padding: 0;
+    margin-top: -20px;
+}
+.logo-big{
+    width: 385px;
+    height: 385px;
+    background-image: url('../img/logobig.png');
+}
+.done{
+    animation: ddone 2s ease-in-out;
+    opacity: 100%;
+}
+.done1{
+    animation: dddone 0.7s ease-in-out;
+    margin-left: -270px;
+}
+.done2{
+    animation: ddddone 3s ease-in;
+    opacity: 100%;
+}
+.menu-box{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-right: #84FFDA solid 3px;
+}
+.menu{
+    height: 85vh;
+    margin-right: 70px;
+}
+.menu-num{
+    height: 85vh;
+    width: 100%;
+}
+.menu-box-num{
+    margin-left: 50px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+ul{
+    height: 1000px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: right;
+}
+.menu-a{
+    text-decoration: none;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 41px;
+    color: #84FFDA;
+    text-align: right;
+}
+.menu-a:hover{
+    color: #FF406E;
+}
+.menu-ab:hover{
+    animation: hoverlinks 0.4s ease-in-out;
+    color: #FFDC5F;
+}
+.contacts{
+    height: 100px;
+    position: absolute;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    animation: ddone 5s ease-in;
+}
+.contacts a:hover{
+    color: #FF406E;
+}
+.mail{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.call{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contacts a{
+    text-decoration: none;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: #84FFDA;
+}
+.phone-icon{
+    height: 39px;
+    width: 39px;
+    background-image: url('../img/phone-icon.png');
+    margin-right: 10px;
+}
+.mail-icon{
+    height: 39px;
+    width: 40px;
+    background-image: url('../img/mail-icon.png');
+    margin-right: 10px;
+}
+.vkinst{
+    z-index: 9;
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    top: 91%;
+    left: 78%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: ddddone 4s ease-in;
+}
+.vk-logo:hover{
+   animation: social 0.3s ease;
+   margin-top: -55px;
+}
+.inst-logo:hover{
+   animation: social 0.3s ease;
+   margin-top: -55px;
+}
+.logo-box{
+    height: 100px;
+    width: 200px;
+    display: flex;
+    justify-content: end;
+}
+.vk-logo{
+    width: 97px;
+    height: 97px;
+    background-image: url('../img/vk.png');
+}
+.inst-logo{
+    width: 91px;
+    height: 93px;
+    background-image: url('../img/insta.png');
+}
+.parolax{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    animation: ddddone 4s ease-in;
+}
+.par1{
+    position: absolute;
+    width: 247px;
+    height: 247px;
+    background-image: url('../img/bigcircle.png');
+    top: 15%;
+    left: 70%;
+    animation: ddddone 3s ease-in;
+}
+.parts{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+.par{
+    height: 100vh;
+    width: 100%;
+}
+.par2{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: 15%;
+    left: 70%;
+    background-image: url('../img/litcircle.png');
+}
+.par3{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: 65%;
+    left: 20%;
+    background-image: url('../img/litcircle.png');
+    animation: ddddone 3s ease-in;
+}
+.par4{
+    position: absolute;
+    width: 247px;
+    height: 247px;
+    top: 65%;
+    left: 15%;
+    background-image: url('../img/bigcircle.png');
+}
+.par5{
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    top: 21%;
+    left: 15%;
+    background-image: url('../img/litsquare.png');
+}
+.par6{
+    position: absolute;
+    width: 301px;
+    height: 301px;
+    top: 15%;
+    left: 20%;
+    background-image: url('../img/bigsquare.png');
+    animation: ddddone 3s ease-in;
+}
+.par7{
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    top: 60%;
+    left: 60%;
+    background-image: url('../img/litsquare.png');
+}
+.par8{
+    position: absolute;
+    width: 301px;
+    height: 301px;
+    top: 60%;
+    left: 60%;
+    background-image: url('../img/bigsquare.png');
+    animation: ddddone 3s ease-in;
+}
+
+@keyframes ddone{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+@keyframes dddone{
+    0%{
+        margin-left: 0;
+    }
+    100%{
+        margin-left: -270px;
+    }
+}
+@keyframes ddddone{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+@keyframes hoverlinks{
+    0%{
+        margin-right: 0;
+    }
+    50%{
+        margin-right: 15px;
+    }
+    100%{
+        margin-right: 0;
+    }
+}
+@keyframes social{
+    0%{
+        margin-top: 0;
+    }
+    100%{
+        margin-top: -55px;
+    }
+}
