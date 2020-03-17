@@ -7,7 +7,7 @@ var pipeUp = new Image();
 var pipeBottom = new Image(); 
 var fg = new Image();
 
-bird.src = "img/Logo.png"; 
+bird.src = "img/logo.png"; 
 pipeUp.src = "img/pipeUp.png";
 pipeBottom.src = "img/pipeDown.png";
 bg.src = "img/fon.png"; 
